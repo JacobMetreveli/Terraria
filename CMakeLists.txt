@@ -8,8 +8,8 @@ find_package(SFML COMPONENTS system window graphics REQUIRED)
 add_executable(Terraria src/main.cpp
         src/StoneTile.cpp
         include/StoneTile.h
-        src/game.cpp
-        include/game.h)
+        src/Game.cpp
+        include/Game.h)
 
 include_directories(include)
 

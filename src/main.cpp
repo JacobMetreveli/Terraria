@@ -12,7 +12,6 @@ std::vector<StoneTile> generateGround() {
             tiles.emplace_back((float)i, (float)j);
         }
     }
-
     return tiles;
 }
 
