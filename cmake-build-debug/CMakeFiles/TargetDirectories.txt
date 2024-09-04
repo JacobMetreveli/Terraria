@@ -1,0 +1,3 @@
+/home/simteam-j/Workspace/WEB/Terraria/cmake-build-debug/CMakeFiles/Terraria.dir
+/home/simteam-j/Workspace/WEB/Terraria/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/simteam-j/Workspace/WEB/Terraria/cmake-build-debug/CMakeFiles/rebuild_cache.dir
