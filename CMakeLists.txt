@@ -9,7 +9,9 @@ add_executable(Terraria src/main.cpp
         src/StoneTile.cpp
         include/StoneTile.h
         src/Game.cpp
-        include/Game.h)
+        include/Game.h
+        src/Player.cpp
+        include/Player.h)
 
 include_directories(include)
 

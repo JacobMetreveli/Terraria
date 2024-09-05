@@ -1,17 +1,15 @@
 #include <iostream>
 #include "StoneTile.h"
 
-int StoneTile::initTexture() {
-    if (!texture.loadFromFile("/home/simteam-j/Workspace/WEB/Terraria/assets/tiles/Ground.png"))
-        return -1;
-    sf::IntRect tileRect(0, 0, 32, 32);
-
+void StoneTile::initTexture(const sf::Texture& texture) {
+    // Initialize sprite
     tile = new sf::Sprite;
     tile->setTexture(texture);
+    // Pick the texture that I need
+    sf::IntRect tileRect(0, 0, 32, 32);
     tile->setTextureRect(tileRect);
+    // Scale the tile
     tile->setScale(this->width / (float)tileRect.width, this->height / (float)tileRect.height);
-
-    return 0;
 }
 
 void StoneTile::initShape() {
@@ -19,17 +17,21 @@ void StoneTile::initShape() {
     this->height = 50.f;
 }
 
-StoneTile::StoneTile(float x, float y) {
+StoneTile::StoneTile(float x, float y, const sf::Texture& texture) {
     this->initShape();
-    if (this->initTexture() == -1)
-        std::cout << "Failed to load texture";
+    this->initTexture(texture);
+
     this->tile->setPosition(x, y);
 }
 
-void StoneTile::draw_shape(sf::RenderWindow &window) {
-    window.draw(*tile);
+void StoneTile::drawShape(sf::RenderWindow &window) {
+    window.draw(*this->tile);
 }
 
 sf::Vector2f StoneTile::getPos() const {
     return this->tile->getPosition();
+}
+
+sf::Vector2f StoneTile::getShape() const {
+    return {float(this->width), (float)this->height};
 }

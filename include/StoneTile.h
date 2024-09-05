@@ -3,17 +3,18 @@
 
 class StoneTile {
 public:
-    StoneTile(float x, float y);
+    StoneTile(float x, float y, const sf::Texture& texture);
+
+    void drawShape(sf::RenderWindow &window);
 
     [[nodiscard]] sf::Vector2f getPos() const;
-    void draw_shape(sf::RenderWindow &window);
+    [[nodiscard]] sf::Vector2f getShape() const;
 
 private:
     sf::Sprite* tile{};
-    sf::Texture texture{};
     float width{};
     float height{};
 
     void initShape();
-    int initTexture();
+    void initTexture(const sf::Texture& texture);
 };

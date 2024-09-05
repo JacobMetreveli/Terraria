@@ -6,6 +6,9 @@
 #define TERRARIA_GAME_H
 
 #include <SFML/Graphics.hpp>
+#include <vector>
+#include "StoneTile.h"
+#include "Player.h"
 
 #define WIN_WIDTH 960
 #define WIN_HEIGHT 540
@@ -16,13 +19,29 @@ public:
     void run();
 
 private:
-    sf::RenderWindow* window;
-    sf::Event event;
+    sf::RenderWindow* window{};
+    sf::Event event{};
 
+    // Textures
+    sf::Texture groundTexture;
+
+    // Game objects
+    std::vector<StoneTile> ground;
+    Player* player;
+
+    // Event handlers
     void handleEvents();
     void handleDisplay();
 
+    // Draw objects
+    void drawObjects();
+
+    //Initialize functions
     void initWindow();
+    void initTextures();
+    void initPlayer();
+
+    void generateGround();
 };
 
 

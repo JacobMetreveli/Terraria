@@ -63,8 +63,15 @@ build CMakeFiles/Terraria.dir/src/StoneTile.cpp.o: CXX_COMPILER__Terraria_unscan
   OBJECT_DIR = CMakeFiles/Terraria.dir
   OBJECT_FILE_DIR = CMakeFiles/Terraria.dir/src
 
-build CMakeFiles/Terraria.dir/src/game.cpp.o: CXX_COMPILER__Terraria_unscanned_Debug /home/simteam-j/Workspace/WEB/Terraria/src/game.cpp || cmake_object_order_depends_target_Terraria
-  DEP_FILE = CMakeFiles/Terraria.dir/src/game.cpp.o.d
+build CMakeFiles/Terraria.dir/src/Game.cpp.o: CXX_COMPILER__Terraria_unscanned_Debug /home/simteam-j/Workspace/WEB/Terraria/src/Game.cpp || cmake_object_order_depends_target_Terraria
+  DEP_FILE = CMakeFiles/Terraria.dir/src/Game.cpp.o.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  INCLUDES = -I/home/simteam-j/Workspace/WEB/Terraria/include
+  OBJECT_DIR = CMakeFiles/Terraria.dir
+  OBJECT_FILE_DIR = CMakeFiles/Terraria.dir/src
+
+build CMakeFiles/Terraria.dir/src/Player.cpp.o: CXX_COMPILER__Terraria_unscanned_Debug /home/simteam-j/Workspace/WEB/Terraria/src/Player.cpp || cmake_object_order_depends_target_Terraria
+  DEP_FILE = CMakeFiles/Terraria.dir/src/Player.cpp.o.d
   FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
   INCLUDES = -I/home/simteam-j/Workspace/WEB/Terraria/include
   OBJECT_DIR = CMakeFiles/Terraria.dir
@@ -78,7 +85,7 @@ build CMakeFiles/Terraria.dir/src/game.cpp.o: CXX_COMPILER__Terraria_unscanned_D
 #############################################
 # Link the executable Terraria
 
-build Terraria: CXX_EXECUTABLE_LINKER__Terraria_Debug CMakeFiles/Terraria.dir/src/main.cpp.o CMakeFiles/Terraria.dir/src/StoneTile.cpp.o CMakeFiles/Terraria.dir/src/game.cpp.o | /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
+build Terraria: CXX_EXECUTABLE_LINKER__Terraria_Debug CMakeFiles/Terraria.dir/src/main.cpp.o CMakeFiles/Terraria.dir/src/StoneTile.cpp.o CMakeFiles/Terraria.dir/src/Game.cpp.o CMakeFiles/Terraria.dir/src/Player.cpp.o | /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
   FLAGS = -g
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
   OBJECT_DIR = CMakeFiles/Terraria.dir
