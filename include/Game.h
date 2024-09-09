@@ -27,9 +27,10 @@ private:
 
     // Game objects
     std::vector<StoneTile> ground;
-    Player* player;
+    Player* player{};
 
     // Event handlers
+    void handleMovement();
     void handleEvents();
     void handleDisplay();
 

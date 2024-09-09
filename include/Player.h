@@ -14,14 +14,19 @@ public:
 
     void drawShape(sf::RenderWindow &window);
 
-    // Get functions
+    // Getter functions
     [[nodiscard]] sf::Vector2f getPos() const;
     [[nodiscard]] sf::Vector2f getShape() const;
+    [[nodiscard]] sf::Vector2f getVelocity() const;
+
+    // Setter functions
 
     // Movement
-    void move(float x, float y);
+    void handleMovement(sf::Event ev);
+
 private:
     sf::RectangleShape* playerSprite{};
+    sf::Vector2f velocity{};
 
     void initPlayer();
 };

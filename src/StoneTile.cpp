@@ -1,4 +1,3 @@
-#include <iostream>
 #include "StoneTile.h"
 
 void StoneTile::initTexture(const sf::Texture& texture) {
