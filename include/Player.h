@@ -27,8 +27,7 @@ public:
 private:
     sf::RectangleShape* playerSprite{};
     sf::Vector2f velocity{};
-
-    void initPlayer();
+    const float dAcc;
 };
 
 

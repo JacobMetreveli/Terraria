@@ -5,11 +5,9 @@
 #include <iostream>
 #include "Player.h"
 
-Player::Player(float x, float y) {
-    this->initPlayer();
-}
-
-void Player::initPlayer() {
+Player::Player(float x, float y)
+    : velocity(sf::Vector2f(0.f, 0.f)), dAcc(2.f)
+{
     this->playerSprite = new sf::RectangleShape(sf::Vector2f(30, 80));
     this->playerSprite->setPosition(500, 240);
     this->velocity = sf::Vector2f(0.f, 0.f);
@@ -17,7 +15,6 @@ void Player::initPlayer() {
 
 void Player::handleMovement(sf::Event ev) {
     sf::Vector2f acceleration(0.f, 0.f);
-    const float dAcc = 2.f;
 
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
         acceleration.x += dAcc;
