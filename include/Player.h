@@ -6,6 +6,7 @@
 #define TERRARIA_PLAYER_H
 
 #include <SFML/Graphics.hpp>
+#include "Collider.h"
 
 class Player {
 public:
@@ -14,6 +15,11 @@ public:
 
     void drawShape(sf::RenderWindow &window);
 
+    // Movement
+    void handleMovement(sf::Event ev);
+
+    Collider GetCollider() {return Collider(*body);};
+
     // Getter functions
     [[nodiscard]] sf::Vector2f getPos() const;
     [[nodiscard]] sf::Vector2f getShape() const;
@@ -21,11 +27,8 @@ public:
 
     // Setter functions
 
-    // Movement
-    void handleMovement(sf::Event ev);
-
 private:
-    sf::RectangleShape* playerSprite{};
+    sf::RectangleShape* body{};
     sf::Vector2f velocity{};
     const float dAcc;
 };

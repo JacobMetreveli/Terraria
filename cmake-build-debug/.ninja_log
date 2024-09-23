@@ -1,15 +1,10 @@
 # ninja log v6
-1	571	1725877587758721914	CMakeFiles/Terraria.dir/src/Player.cpp.o	9dedf1092ea5f1b2
-2	16	1725456019891280084	CMakeFiles/Terraria.dir/src/game.cpp.o	1bdbd2503b88d3b
-1	615	1725877587758721914	CMakeFiles/Terraria.dir/src/main.cpp.o	4be00564170e7192
-645	734	1725877588402724432	Terraria	e93de2313159b187
-2	555	1725449099567075912	CMakeFiles/Terraria.dir/main.cpp.o	3200a187e13eef9a
-2	568	1725868355241622904	CMakeFiles/Terraria.dir/src/StoneTile.cpp.o	26accafa3a472277
-1	19	1725868329529591619	build.ninja	2a4e1b63dacb2d40
-1	645	1725877587758721914	CMakeFiles/Terraria.dir/src/Game.cpp.o	44c9e5e90162ba13
-2	534	1725883061485945787	CMakeFiles/Terraria.dir/src/main.cpp.o	4be00564170e7192
-2	538	1725883061485945787	CMakeFiles/Terraria.dir/src/Player.cpp.o	9dedf1092ea5f1b2
-2	617	1725883061485945787	CMakeFiles/Terraria.dir/src/Game.cpp.o	44c9e5e90162ba13
-617	686	1725883062101944146	Terraria	e93de2313159b187
-2	615	1725883274201384408	CMakeFiles/Terraria.dir/src/Game.cpp.o	44c9e5e90162ba13
-615	686	1725883274813382806	Terraria	e93de2313159b187
+2	664	1726738481396325968	CMakeFiles/Terraria.dir/src/Game.cpp.o	44c9e5e90162ba13
+1	19	1727074179465404181	build.ninja	2a4e1b63dacb2d40
+2	578	1726738481396325968	CMakeFiles/Terraria.dir/src/StoneTile.cpp.o	26accafa3a472277
+664	740	1726738482056328599	Terraria	e93de2313159b187
+2	573	1726738481396325968	CMakeFiles/Terraria.dir/src/main.cpp.o	4be00564170e7192
+3	588	1726738481396325968	CMakeFiles/Terraria.dir/src/Player.cpp.o	9dedf1092ea5f1b2
+1	31	1727074179465404181	build.ninja	a53304bc3bc92bc4
+2	579	1727074179473404193	CMakeFiles/Terraria.dir/src/Collision.cpp.o	836d5e0b4f7d6314
+579	676	1727074180049405052	Terraria	9e690c1c6476c8a6

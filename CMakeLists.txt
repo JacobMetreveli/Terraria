@@ -11,7 +11,9 @@ add_executable(Terraria src/main.cpp
         src/Game.cpp
         include/Game.h
         src/Player.cpp
-        include/Player.h)
+        include/Player.h
+        src/Collider.cpp
+        include/Collider.h)
 
 include_directories(include)
 
