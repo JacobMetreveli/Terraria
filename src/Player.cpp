@@ -10,6 +10,7 @@ Player::Player(float x, float y)
 {
     this->body = new sf::RectangleShape(sf::Vector2f(30, 80));
     this->body->setPosition(500, 240);
+    this->body->setOrigin(this->getShape() / 2.0f);
     this->velocity = sf::Vector2f(0.f, 0.f);
 }
 

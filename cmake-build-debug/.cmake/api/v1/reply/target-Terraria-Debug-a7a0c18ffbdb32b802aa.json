@@ -184,12 +184,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/Collision.cpp",
+			"path" : "src/Collider.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "include/Collision.h",
+			"path" : "include/Collider.h",
 			"sourceGroupIndex" : 1
 		}
 	],

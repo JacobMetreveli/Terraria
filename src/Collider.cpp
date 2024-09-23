@@ -8,6 +8,11 @@ Collider::Collider(sf::RectangleShape &body)
     :body(body) {
 }
 
+Collider::Collider(sf::Sprite &body)
+    :body(reinterpret_cast<sf::RectangleShape &>(body)) {
+
+}
+
 Collider::~Collider() = default;
 
 bool Collider::CheckCollision(Collider &other, float push) {

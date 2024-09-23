@@ -8,6 +8,7 @@ public:
 
     void drawShape(sf::RenderWindow &window);
 
+    Collider GetCollider();
     [[nodiscard]] sf::Vector2f getPos() const;
     [[nodiscard]] sf::Vector2f getShape() const;
 

@@ -10,7 +10,8 @@
 class Collider {
 public:
 
-    explicit Collider(sf::RectangleShape &body);
+    explicit Collider(sf::RectangleShape& body);
+    explicit Collider(sf::Sprite& body);
 
     ~Collider();
 

@@ -45,6 +45,12 @@ void Game::handleDisplay() {
     window->display();
 }
 
+void Game::checkCollision() {
+    for (auto tile: ground) {
+        tile.GetCollider().CheckCollision(player->GetCollider(), 0.0f);
+    }
+}
+
 // Init functions
 void Game::initWindow() {
     window = new sf::RenderWindow(sf::VideoMode(WIN_WIDTH, WIN_HEIGHT), "Terraria");

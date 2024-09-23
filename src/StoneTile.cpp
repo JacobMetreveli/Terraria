@@ -9,6 +9,7 @@ void StoneTile::initTexture(const sf::Texture& texture) {
     tile->setTextureRect(tileRect);
     // Scale the tile
     tile->setScale(this->width / (float)tileRect.width, this->height / (float)tileRect.height);
+    tile->setOrigin(getShape() / 2.0f);
 }
 
 void StoneTile::initShape() {
@@ -25,6 +26,11 @@ StoneTile::StoneTile(float x, float y, const sf::Texture& texture) {
 
 void StoneTile::drawShape(sf::RenderWindow &window) {
     window.draw(*this->tile);
+}
+
+// Getter functions
+Collider StoneTile::GetCollider() {
+    return Collider(*tile);
 }
 
 sf::Vector2f StoneTile::getPos() const {

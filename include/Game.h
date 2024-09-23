@@ -30,9 +30,9 @@ private:
     Player* player{};
 
     // Event handlers
-    void handleMovement();
     void handleEvents();
     void handleDisplay();
+    void checkCollision();
 
     // Draw objects
     void drawObjects();
